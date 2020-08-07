@@ -12,8 +12,8 @@ class Challenges
 
         // load challenges
         $this->shapes();
-        // $this->extrude();
-        // $this->library();
+        $this->extrude();
+        $this->library();
 
         // $tricksy = new Tricksy();
         // $tricksy->start();
@@ -71,8 +71,8 @@ class Challenges
 
         $shelf = new Library\Shelf();
         $shelf->addItem(new Library\Book("Zero: The Biography of a Dangerous Idea", 256));
-        $shelf->addItem(new Library\DVD("Hunt for the Wilderpeople"));
-        $shelf->addItem(new Library\CD("Teal Album"));
+        dump($shelf->addItem(new Library\DVD("Hunt for the Wilderpeople")));
+        dump($shelf->addItem(new Library\CD("Teal Album")));
 
         $otherShelf = new Library\Shelf();
         $otherShelf->addItem(new Library\Book("The Power Broker", 1336));

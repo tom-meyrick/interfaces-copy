@@ -4,7 +4,7 @@ namespace App\Shapes;
 
 interface ShapeInterface 
 {
-    public function area();
+    public function area() : float;
 }
 
 

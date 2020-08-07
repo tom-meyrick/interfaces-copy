@@ -7,13 +7,14 @@ class Rectangle implements ShapeInterface
     private $length;
     private $width;
 
-    public function __construct($length, $width) 
+    public function __construct(float $length, float $width) 
     {
         $this->length = $length;
         $this->width = $width;
     }
 
-    public function area() {
+    public function area() : float
+    {
         return $this->length * $this->width;
     }
 }
