@@ -13,7 +13,7 @@ class CD implements Titled
         $this->title = $title;
     }
 
-    public function titles() : string
+    public function title() : string
     {
         return $this->title;
     }

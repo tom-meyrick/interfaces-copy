@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Library;
 
-class Book 
+class Book implements Titled
 {
     private $title;
     private $pages;
@@ -27,7 +27,7 @@ class Book
        return $this;
     }
 
-    public function titles() : string
+    public function title() : string
     {
         return $this->title;
     }

@@ -6,7 +6,7 @@ namespace App\Library;
 
 interface Titled 
 {
-    public function titles() : string;
+    public function title() : string;
 }
 
 

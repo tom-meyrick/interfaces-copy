@@ -8,12 +8,7 @@ class Shelf
 {
     private $catalogue = [];
 
-    public function addBook(Book $book)
-    {    
-       $this->catalogue[] = $book;
-    }
-
-    public function addItem($item)
+    public function addItem(Titled $item)
     {
         $this->catalogue[] = $item;
     }
@@ -21,8 +16,7 @@ class Shelf
     public function titles() : array
     {
         $collection = collect($this->catalogue);
-        return $collection->map(fn($item) => $item->titles())->all();
-        // add getter to book.php
+        return $collection->map(fn($item) => $item->title())->all();
     }
 
 }
